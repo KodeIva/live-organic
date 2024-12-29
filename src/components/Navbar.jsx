@@ -35,7 +35,7 @@ const Navbar = () => {
      <div className='container flex justify-between items-center py-4 md:pt-4'> 
       <div className="container flex items-center text-3xl font-semibold ">
         <span className='text-[#F72C5B]'>Live </span>
-        <span className='text-[#88D66C]'><ImLeaf/></span>
+        <span className='text-[#619a4c]'><ImLeaf/></span>
         <span className='text-[#FF885B] ml-[-9px]'>Organic </span>
       </div>
 
@@ -44,10 +44,14 @@ const Navbar = () => {
             {NavbarMenu.map((menu) => {
                 return (
                     <li key={menu.id} className='text-xl'>
-                       <a href={menu.link}>{menu.title}</a> 
+                       <a href={menu.link} className='inline-block py-1 px-3 hover:text-[#619a4c]
+                           hover:shadow-[0_3px_0_-1px_#619a4c] font-semibold'>
+                         {menu.title}
+                       </a> 
                     </li>
                 )
             })}
+            
         </ul>
       </div> 
      </div>
