@@ -1,4 +1,5 @@
 import React from 'react'
+import { ImLeaf } from "react-icons/im";
 
 const Navbar = () => {
   return (
@@ -6,6 +7,7 @@ const Navbar = () => {
       <div className="container">
         <span>Live</span>
         <span>Organic</span>
+        <span><ImLeaf/></span>
       </div>
     </nav>
   )
