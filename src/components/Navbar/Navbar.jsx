@@ -1,6 +1,7 @@
 import React from 'react'
 import { ImLeaf } from "react-icons/im";
 import { TiShoppingCart } from "react-icons/ti";
+import { IoMdMenu } from "react-icons/io";
 
 const NavbarMenu = [
     {
@@ -58,6 +59,12 @@ const Navbar = () => {
             </button>
         </ul>
       </div> 
+
+      <div className='md:hidden'>
+        <IoMdMenu className='text-4xl' />
+      </div>
+      
+
      </div>
     </nav>
   )
