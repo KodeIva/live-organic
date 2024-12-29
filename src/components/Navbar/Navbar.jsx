@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { ImLeaf } from "react-icons/im";
 import { TiShoppingCart } from "react-icons/ti";
 import { IoMdMenu } from "react-icons/io";
+import { motion, AnimatePresence } from 'framer-motion'
+import ResponsiveMenu from './ResponsiveMenu';
 
 const NavbarMenu = [
     {
@@ -32,7 +34,9 @@ const NavbarMenu = [
 ]
 
 const Navbar = () => {
+  const [open,setOpen] = useState(false)
   return (
+   <> 
     <nav className=''>
      <div className='container flex justify-between items-center py-4 md:pt-4'> 
       <div className="container flex items-center text-3xl font-semibold ">
@@ -67,6 +71,9 @@ const Navbar = () => {
 
      </div>
     </nav>
+
+    <ResponsiveMenu open={open} setOpen={setOpen} />
+    </>
   )
 }
 
