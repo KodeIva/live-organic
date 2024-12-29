@@ -1,5 +1,6 @@
 import React from 'react'
 import { ImLeaf } from "react-icons/im";
+import { TiShoppingCart } from "react-icons/ti";
 
 const NavbarMenu = [
     {
@@ -51,7 +52,10 @@ const Navbar = () => {
                     </li>
                 )
             })}
-            
+            <button className='text-3xl hover:text-white hover:bg-[#619a4c] rounded-full p-1
+            text-[#619a4c] duration-200'>
+              <TiShoppingCart />
+            </button>
         </ul>
       </div> 
      </div>
