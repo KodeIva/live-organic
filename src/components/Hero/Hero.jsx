@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 const Hero = () => {
   return (
     <section>
@@ -20,7 +21,7 @@ const Hero = () => {
                 Order now and get 20% off.
               </p>
               <div className='flex justify-center md:justify-center'>
-                <button>Order Now</button>
+                <button className='primary-btn'>Order Now</button>
               </div>
             </div>
           </div>
