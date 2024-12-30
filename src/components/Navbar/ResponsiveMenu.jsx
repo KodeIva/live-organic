@@ -1,15 +1,15 @@
 import React from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
-const ResponsiveMenu = ({open}) => {
+const ResponsiveMenu = ({open, setOpen}) => {
   return (
     <AnimatePresence mode='wait'>       
     {
       open &&  <motion.div animate={{}}>
-      <div className='absolute top-0 left-0 w-[100%] h-screen z-20'>
+      <div className='absolute top-0 left-0 w-full h-screen z-20 duration-700' onClick={() => setOpen(false)}>
         <div className='text-xl font-semibold bg-[#F72C5B] text-white 
                         py-10'>
-          <ul className='flex w-full flex-col items-center m-2'>
+          <ul className='flex  flex-col items-center m-2'>
             <li className='flex mb-2 w-[50%] justify-center hover:text-[#91e374] hover:translate-x-8 duration-300'><a href="">Home</a></li>
             <li className='flex mb-2 w-[50%] justify-center hover:text-[#91e374] hover:-translate-x-8 duration-300'>About</li>
             <li className='flex mb-2 w-[50%] justify-center hover:text-[#91e374] hover:translate-x-8 duration-300'>Services</li>
