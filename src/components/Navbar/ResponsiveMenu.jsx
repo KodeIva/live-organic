@@ -12,7 +12,7 @@ const ResponsiveMenu = ({open, setOpen}) => {
          transition={{duration: 0.3}}
          className='absolute top-0 left-0 w-full h-screen z-20' onClick={() => setOpen(false)}
          >
-        <div className='text-xl font-semibold bg-[#F72C5B] text-white py-10'>
+        <div className='text-xl font-semibold bg-[#F72C5B] text-white py-10 cursor-pointer'>
           <ul className='flex  flex-col items-center m-2'>
             <li className='flex mb-2 w-[50%] justify-center hover:text-[#91e374] hover:translate-x-8 duration-300'><a href="">Home</a></li>
             <li className='flex mb-2 w-[50%] justify-center hover:text-[#91e374] hover:-translate-x-8 duration-300'>About</li>

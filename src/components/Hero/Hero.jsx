@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { MdOutlineShoppingBag } from "react-icons/md";
 
 const Hero = () => {
   return (
@@ -21,7 +21,10 @@ const Hero = () => {
                 Order now and get 20% off.
               </p>
               <div className='flex justify-center md:justify-center'>
-                <button className='primary-btn'>Order Now</button>
+                
+                <button className='primary-btn flex justify-center align-center gap-2'>
+                  <span className='self-center text-xl'><MdOutlineShoppingBag/></span>
+                  Order Now</button>
               </div>
             </div>
           </div>
