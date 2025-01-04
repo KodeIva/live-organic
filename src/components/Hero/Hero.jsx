@@ -1,5 +1,6 @@
 import React from 'react'
 import { MdOutlineShoppingBag } from "react-icons/md";
+import Fruits from '../../assets/fruits.png'
 
 const Hero = () => {
   return (
@@ -30,6 +31,10 @@ const Hero = () => {
           </div>
 
           {/*Hero images */}
+          <div className='flex justify-center items-center'>
+            <img src={Fruits} alt="" className='w-[350px] md:w-[550px]
+             drop-shadow-xl' />
+          </div>
         </div>
     
     </section>
