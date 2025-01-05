@@ -3,13 +3,14 @@ import Oranges from '../assets/orange.png'
 import Lemon from '../assets/lemons.png'
 import Apple from '../assets/apples.png'
 import Kiwi from '../assets/kiwi.png'
+import Strawberries from '../assets/strawberries.png'
 
 
 export const FruitsData = [
     {
         id: 1,
         title: 'Apple',
-        image: Apple,
+        image: Strawberries,
         link:'/',
         price: '£1.59'
     },
