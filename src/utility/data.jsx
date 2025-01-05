@@ -37,7 +37,7 @@ export const FruitsData = [
     {
         id: 1,
         title: 'Oranges',
-        image: Orange,
+        image: Oranges,
         link:'/',
         price: '£2.99'
     }

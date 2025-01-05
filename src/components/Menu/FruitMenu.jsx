@@ -10,6 +10,7 @@ const FruitMenu = () => {
             return (
                  
                 <li key={fruit.id}>
+                 <img src={fruit.image} alt={fruit.title} />   
                  <a href="/">{fruit.title}</a>  
                  <p>{fruit.price}</p>  
                 </li>
