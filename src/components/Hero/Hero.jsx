@@ -3,6 +3,7 @@ import { MdOutlineShoppingBag } from "react-icons/md";
 import Fruits from '../../assets/fruits.png'
 import {motion} from 'framer-motion'
 import {FadeRight} from '../../utility/animation'
+import { FadeLeft } from '../../utility/animation';
 
 const Hero = () => {
   return (
@@ -49,10 +50,15 @@ const Hero = () => {
           </div>
 
           {/*Hero images */}
-          <div className='flex justify-center items-center'>
+          <motion.div 
+            variants={FadeLeft(0.6)}
+            initial='hidden'
+            animate='vissible'
+            className='flex justify-center items-center'>
+            
             <img src={Fruits} alt="" className='w-[350px] md:w-[550px]
              drop-shadow-xl' />
-          </div>
+          </motion.div>
 
         </div>
     
