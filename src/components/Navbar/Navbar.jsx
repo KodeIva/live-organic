@@ -4,6 +4,7 @@ import { TiShoppingCart } from "react-icons/ti";
 import { IoMdMenu } from "react-icons/io";
 import ResponsiveMenu from './ResponsiveMenu'
 import {motion} from 'framer-motion'
+import { FadeDown } from '../../utility/animation';
 
 const NavbarMenu = [
     {
@@ -38,7 +39,11 @@ const Navbar = () => {
   return (
     <>
     <nav>
-     <div className='container flex justify-between items-center py-4 md:pt-4'> 
+     <motion.div
+       variants={FadeDown(0.3)}
+       initial='hidden'
+       animate='vissible'
+      className='container flex justify-between items-center py-4 md:pt-4'> 
       <div className="container flex items-center text-3xl font-semibold ">
         <span className='text-[#F72C5B]'>Live </span>
         <span className='text-[#619a4c]'><ImLeaf/></span>
@@ -69,7 +74,7 @@ const Navbar = () => {
       </div>
       
 
-     </div>
+     </motion.div>
     </nav>
   
   <ResponsiveMenu open={open} setOpen={setOpen} />
