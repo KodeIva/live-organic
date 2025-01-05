@@ -1,8 +1,8 @@
-export const FadeUp = (delay) => {
+export const FadeDown = (delay) => {
     return {
         hidden: {
             opacity: 0,
-            y: 100
+            y: -100
         },
         vissible: {
             opacity: 1,
