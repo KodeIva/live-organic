@@ -1,7 +1,6 @@
 import Raspberries from '../assets/raspberries.png'
 import Oranges from '../assets/orange.png'
 import Lemon from '../assets/lemons.png'
-import Apple from '../assets/apples.png'
 import Kiwi from '../assets/kiwi.png'
 import Strawberries from '../assets/strawberries.png'
 import { nanoid } from 'nanoid'
@@ -10,7 +9,7 @@ import { nanoid } from 'nanoid'
 export const FruitsData = [
     {
         id: nanoid(),
-        title: 'Apple',
+        title: 'Strawberries',
         image: Strawberries,
         link:'/',
         price: '£1.59'
