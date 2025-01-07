@@ -5,7 +5,33 @@ import Kiwi from '../assets/kiwi.png'
 import Strawberries from '../assets/strawberries.png'
 import { nanoid } from 'nanoid'
 
-
+export const NavbarMenu = [
+    {
+        id: 1,
+        title: 'Home',
+        link: '/'
+    },
+    {
+        id: 2,
+        title: 'Products',
+        link: '#'
+    },
+    {
+        id: 3,
+        title: 'About',
+        link: '#'
+    },
+    {
+        id: 4,
+        title: 'Shop',
+        link: '#'
+    },
+    {
+        id: 5,
+        title: 'Contacts',
+        link: '#'
+    },
+]
 export const FruitsData = [
     {
         id: nanoid(),

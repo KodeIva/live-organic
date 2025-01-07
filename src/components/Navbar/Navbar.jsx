@@ -5,34 +5,8 @@ import { IoMdMenu } from "react-icons/io";
 import ResponsiveMenu from './ResponsiveMenu'
 import {motion} from 'framer-motion'
 import { FadeDown } from '../../utility/animation';
+import { NavbarMenu } from '../../utility/data';
 
-const NavbarMenu = [
-    {
-        id: 1,
-        title: 'Home',
-        link: '/'
-    },
-    {
-        id: 2,
-        title: 'Products',
-        link: '#'
-    },
-    {
-        id: 3,
-        title: 'About',
-        link: '#'
-    },
-    {
-        id: 4,
-        title: 'Shop',
-        link: '#'
-    },
-    {
-        id: 5,
-        title: 'Contacts',
-        link: '#'
-    },
-]
 
 const Navbar = () => {
   const [open,setOpen] = useState(false)
