@@ -1,5 +1,7 @@
 import React from 'react'
 import OrangeFresh from '../../assets/orange-fresh.jpg'
+import {motion} from 'framer-motion'
+import { FadeLeft } from '../../utility/animation';
 
 const About = () => {
   return (
@@ -20,6 +22,16 @@ const About = () => {
                accessible to everyone, protect the planet and support ethical
                farming practises
             </p>
+            <motion.div 
+                variants={FadeLeft(0.9)}
+                initial='hidden'
+                animate='vissible'
+                className='flex justify-center md:justify-center'>
+                
+                <button className='primary-btn flex justify-center align-center gap-2'>
+                  Learn More
+                </button>
+              </motion.div>
         </div>
       </div>
     </section>
