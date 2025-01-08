@@ -6,7 +6,7 @@ import { FadeLeft } from '../../utility/animation';
 const About = () => {
   return (
     <section>
-      <div>
+      <div className='container grid grid-cols-1 md:grid-cols-2 mt-6 py-14'>
         <div>
             <img src={OrangeFresh} 
                  alt="orange" 
