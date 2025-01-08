@@ -1,7 +1,7 @@
 import React from 'react'
 import OrangeFresh from '../../assets/orange-fresh.jpg'
 
-export const About = () => {
+const About = () => {
   return (
     <section>
       <div>
@@ -11,8 +11,13 @@ export const About = () => {
                  className='w-[300px] md:max-w-[400px] h-full object-cover'
             />
         </div>
-        
+        <div>
+            <h1>Who We Are</h1>
+        </div>
       </div>
     </section>
   )
 }
+
+
+export default About
