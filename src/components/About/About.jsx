@@ -15,7 +15,7 @@ const About = () => {
               viewport={{once: true}}
               src={OrangeFresh} 
               alt="orange" 
-              className='w-[300px] md:max-w-[400px] h-full object-cover'
+              className='w-[300px] md:max-w-[400px] h-full object-cover rounded-full border-4 border-orange-200'
             />
         </div>
         <div className='flex flex-col  justify-center '>
@@ -50,7 +50,7 @@ const About = () => {
                 initial='hidden'
                 animate='vissible'
                 viewport={{once: true}}
-                  className='primary-btn flex justify-center align-center gap-2'>
+                  className='primary-btn flex justify-center align-center gap-2 mt-7'>
                   Learn More
                 </motion.button>
               </motion.div>
