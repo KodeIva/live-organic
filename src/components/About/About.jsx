@@ -5,7 +5,7 @@ import { FadeUp } from '../../utility/animation';
 
 const About = () => {
   return (
-    <section>
+    <section id='about'>
       <div className='container grid grid-cols-1 md:grid-cols-2 mt-6 py-14'>
         <div className='flex justify-center items-center'>
             <motion.img

@@ -5,7 +5,7 @@ import { FadeRight , FadeLeft} from '../../utility/animation'
 
 const FruitMenu = () => {
   return (
-    <div className='bg-slate-50 flex flex-col  justify-center items-center h-auto w-full text-blue-800'>
+    <div id='products' className='bg-slate-50 flex flex-col  justify-center items-center h-auto w-full text-blue-800'>
         <motion.h1 
            variants={FadeRight(0.6)}
            initial='hidden'
