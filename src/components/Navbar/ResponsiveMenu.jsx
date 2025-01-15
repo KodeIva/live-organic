@@ -11,7 +11,7 @@ const ResponsiveMenu = ({open, setOpen}) => {
          animate={{opacity: 1, y: 0}}
          exit={{opacity: 0, y: -100}}
          transition={{duration: 0.3}}
-         className='absolute top-0 left-0 w-full h-screen z-20' onClick={() => setOpen(false)}
+         className=' md:hidden absolute top-0 left-0 w-full h-screen z-20' onClick={() => setOpen(false)}
          >
         <div className='text-xl font-semibold bg-[#F72C5B] text-white py-10 cursor-pointer'>
           <ul className='flex  flex-col items-center m-2'>
