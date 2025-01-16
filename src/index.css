@@ -9,3 +9,7 @@
          hover:!scale-110 duration-300 ;
     }
 }
+
+html {
+    scroll-behavior: smooth;
+}
