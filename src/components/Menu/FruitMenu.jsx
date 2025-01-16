@@ -16,7 +16,7 @@ const FruitMenu = () => {
             initial='hidden'
             animate='vissible'
          className='flex flex-wrap justify-center items-center w-full'>
-        {FruitsData.map((fruit) => {
+        {FruitsData.map((fruit,index) => {
             return (
                 <motion.li 
                 variants={FadeLeft(0.6)}
@@ -29,7 +29,8 @@ const FruitMenu = () => {
                  <img className='w-[120px] pb-6 md:w-[150px] lg:w-[200px]
                   transform-translate-y-6' src={fruit.image} alt={fruit.title} />   
                  <a className='absolute bottom-8 text-xl text-[#FF885B] font-semibold' href="/">{fruit.title}</a>  
-                 <p className='absolute bottom-1 text-xl text-[#619a4c] font-semibold'>{fruit.price}</p>  
+                 <p className='absolute bottom-1 text-xl text-[#619a4c] font-semibold'>{fruit.price}</p> 
+                 <span className='text-4xl'>{index + 1}</span> 
                 </motion.li> 
             ) 
         })}
