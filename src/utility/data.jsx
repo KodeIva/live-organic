@@ -23,8 +23,8 @@ export const NavbarMenu = [
     },
     {
         id: 4,
-        title: 'Shop',
-        link: '#shop'
+        title: 'Recipe',
+        link: '#recipe'
     },
     {
         id: 5,
