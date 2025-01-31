@@ -30,7 +30,7 @@ const FruitMenu = () => {
                   transform-translate-y-6' src={fruit.image} alt={fruit.title} />   
                  <a className='absolute bottom-8 text-xl text-[#FF885B] font-semibold' href="/">{fruit.title}</a>  
                  <p className='absolute bottom-1 text-xl text-[#619a4c] font-semibold'>{fruit.price}</p> 
-                 <span className='text-4xl'>{index + 1}</span> 
+                 <span className='absolute top-1 left-2 text-lg text-[#FF885B] p-1 rounded-3xl'>#{index + 1}</span> 
                 </motion.li> 
             ) 
         })}
