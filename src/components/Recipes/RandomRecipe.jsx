@@ -23,11 +23,11 @@ const RandomRecipe = () => {
 
 
   return (
-    <div id='recipe' className='bg-blue-50 flex flex-col justify-center items-center'>
-      <h1 className='text-2xl font-semibold text-[#FF885B]'>Your random recipe</h1>
-        <h2 className='text-xl text-slate-500 font-semibold'>{meal.strMeal}</h2>
-        <img src={meal.strMealThumb} alt="" />
-        <p className='text-lg text-slate-500 font-medium'>
+    <div id='recipe' className='py-5 bg-blue-50 flex flex-col justify-center items-center'>
+      <h1 className='text-3xl  font-semibold text-[#FF885B]'>Your random recipe</h1>
+        <h2 className='text-xl my-3 text-slate-500 font-semibold'>{meal.strMeal}</h2>
+        <img className='w-[80%] lg:w-[50%]' src={meal.strMealThumb} alt="" />
+        <p className='text-lg py-3 text-slate-500 font-medium'>
             <a href={meal.strSource}> Recipe and instructions</a>
         </p>
        {/*  <p><span>{meal.strMeasure1}</span><span>{meal.strIngredient1}</span></p>*/}
