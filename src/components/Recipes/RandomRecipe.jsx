@@ -28,7 +28,7 @@ const RandomRecipe = () => {
         <h2 className='text-xl my-3 text-slate-500 font-semibold'>{meal.strMeal}</h2>
         <img className='w-[80%] lg:w-[50%]' src={meal.strMealThumb} alt="" />
         <p className='text-lg py-3 text-slate-500 font-medium'>
-            <a href={meal.strSource}> Recipe and instructions</a>
+            <a href={meal.strSource} rel='noopener' target='_blank' > Recipe and instructions</a>
         </p>
        {/*  <p><span>{meal.strMeasure1}</span><span>{meal.strIngredient1}</span></p>*/}
 
