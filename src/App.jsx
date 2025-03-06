@@ -4,6 +4,7 @@ import Hero from './components/Hero/Hero'
 import FruitMenu from './components/Menu/FruitMenu'
 import  About  from './components/About/About'
 import RandomRecipe from './components/Recipes/RandomRecipe'
+import Footer from './components/Footer/Footer'
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <FruitMenu/>
       <About/>
       <RandomRecipe/>
+      <Footer/>
     </main>
   )
 }
