@@ -9,12 +9,20 @@ let currentYear = new Date().getFullYear()
 const Footer = () => {
   return (
     <div className='m-10'>
-      <div>
-      <ul className='flex items-center gap-6 text-gray-600'>
+    <div className='flex flex-col my-1 py-2 justify-center items-center p-1 md:flex-row md:justify-evently md:items-center xl:items-center xl:justify-evenly'>
+    <div className='socials flex justify-center items-center pb-3 mr-4 xl:gap-2'>
+        <a className='text-blue-500 text-2xl md:text-4xl mx-1' href="https://facebook.com"><FaFacebookSquare /></a>
+        <a className='text-slate-800 text-2xl md:text-4xl mx-1' href="https://x.com"><FaSquareXTwitter /></a>
+        <a className='text-red-600 text-2xl md:text-4xl mx-1' href="https://pinterest.com"><FaPinterestSquare /></a>
+        <a className='text-orange-600 text-2xl md:text-4xl mx-1' href="https://youtube.com"><FaYoutube /></a>
+        <a className='text-pink-600 text-2xl md:text-4xl mx-1' href="https://instagram.com"><FaInstagramSquare /></a>
+      </div>
+         <div>
+      <ul className='grid grid-cols-2 gap-1 md:flex xl:gap-4 text-gray-600 justify-center items-center'>
             {NavbarMenu.map((menu) => {
                 return (
                     <li key={menu.id} className='text-xl'>
-                       <a href={menu.link} className='inline-block py-1 px-3 hover:text-[#619a4c]
+                       <a href={menu.link} className='inline-block py-1 px-2 hover:text-[#619a4c]
                            hover:shadow-[0_3px_0_-1px_#619a4c] font-semibold'>
                          {menu.title}
                        </a> 
@@ -23,28 +31,24 @@ const Footer = () => {
             })}
         </ul>
       </div>
-      <div>
-         <div className="container flex items-center text-xl font-semibold ">
+    </div>
+    
+      <div className='flex flex-col justify-center items-center  my-1 py-2 md:flex-row'>
+         <div className="p-3 flex items-center text-xl font-semibold md:mr-2 ">
           <span className='text-[#F72C5B]'>Live </span>
           <span className='text-[#619a4c]'><ImLeaf/></span>
           <span className='text-[#FF885B] ml-[-9px]'>Organic </span>
          </div>
-         <div>
-           <span> &#169;{currentYear}</span>
-           <span> Created by 
+         <div className=' p-3 flex flex-col justify-center items-center md:flex-row '>
+           <span> &#169;{currentYear}
+            Created by 
              <a href="https://kodeiva.netlify.app"> KodeIva. </a> 
            </span>
            <span> All rights reserved.</span>
          </div>
       </div>
 
-      <div className='socials flex'>
-        <a className='text-blue-500' href="https://facebook.com"><FaFacebookSquare /></a>
-        <a className='text-slate-800' href="https://x.com"><FaSquareXTwitter /></a>
-        <a className='text-red-600' href="https://pinterest.com"><FaPinterestSquare /></a>
-        <a className='text-orange-600' href="https://youtube.com"><FaYoutube /></a>
-        <a className='text-pink-600' href="https://instagram.com"><FaInstagramSquare /></a>
-      </div>
+
 
     </div>
   )
