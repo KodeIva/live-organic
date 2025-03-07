@@ -34,10 +34,12 @@ const Footer = () => {
     </div>
     
       <div className='flex flex-col justify-center items-center  my-1 py-2 md:flex-row'>
-         <div className="p-3 flex items-center text-xl font-semibold md:mr-2 ">
+         <div className="p-3 flex items-center text-xl font-semibold md:mr-2 ">   
+          <a href="/" className='flex'>
           <span className='text-[#F72C5B]'>Live </span>
           <span className='text-[#619a4c]'><ImLeaf/></span>
           <span className='text-[#FF885B] ml-[-9px]'>Organic </span>
+          </a>
          </div>
          <div className=' p-3 flex flex-col justify-center items-center md:flex-row '>
            <span> &#169;{currentYear}
