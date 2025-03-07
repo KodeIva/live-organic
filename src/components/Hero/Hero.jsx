@@ -43,8 +43,11 @@ const Hero = () => {
                 className='flex justify-center md:justify-center'>
                 
                 <button className='primary-btn flex justify-center align-center gap-2'>
-                  <span className='self-center text-xl'><MdOutlineShoppingBag/></span>
-                  Order Now</button>
+                  <a href="#products" className='flex'>
+                    <span className='self-center text-xl'><MdOutlineShoppingBag/></span>
+                  Order Now
+                  </a>
+                 </button> 
               </motion.div>
             </div>
           </div>
