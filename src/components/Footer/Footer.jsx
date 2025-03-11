@@ -11,11 +11,11 @@ const Footer = () => {
     <div className='m-10'>
     <div className='flex flex-col my-1 py-2 justify-center items-center p-1 md:flex-row md:justify-evently md:items-center xl:items-center xl:justify-evenly'>
     <div className='socials flex justify-center items-center pb-3 mr-4 xl:gap-2'>
-        <a className='text-blue-500 text-2xl md:text-4xl mx-1' href="https://facebook.com"><FaFacebookSquare /></a>
-        <a className='text-slate-800 text-2xl md:text-4xl mx-1' href="https://x.com"><FaSquareXTwitter /></a>
-        <a className='text-red-600 text-2xl md:text-4xl mx-1' href="https://pinterest.com"><FaPinterestSquare /></a>
-        <a className='text-orange-600 text-2xl md:text-4xl mx-1' href="https://youtube.com"><FaYoutube /></a>
-        <a className='text-pink-600 text-2xl md:text-4xl mx-1' href="https://instagram.com"><FaInstagramSquare /></a>
+        <a className='text-blue-500 hover:text-blue-400 text-2xl md:text-4xl mx-1' href="https://facebook.com"><FaFacebookSquare /></a>
+        <a className='text-slate-800 hover:text-slate-600 text-2xl md:text-4xl mx-1' href="https://x.com"><FaSquareXTwitter /></a>
+        <a className='text-red-600 hover:text-red-400 text-2xl md:text-4xl mx-1' href="https://pinterest.com"><FaPinterestSquare /></a>
+        <a className='text-orange-600 hover:text-orange-400 text-2xl md:text-4xl mx-1' href="https://youtube.com"><FaYoutube /></a>
+        <a className='text-pink-600 hover:text-pink-400 text-2xl md:text-4xl mx-1' href="https://instagram.com"><FaInstagramSquare /></a>
       </div>
          <div>
       <ul className='grid grid-cols-2 gap-1 md:flex xl:gap-4 text-gray-600 justify-center items-center'>
