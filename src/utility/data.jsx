@@ -29,7 +29,7 @@ export const NavbarMenu = [
     {
         id: 5,
         title: 'Contacts',
-        link: '#'
+        link: '#contacts'
     },
 ]
 export const FruitsData = [

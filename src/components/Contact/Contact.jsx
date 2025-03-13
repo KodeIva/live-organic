@@ -2,9 +2,9 @@
 
 const Contact = () => {
   return (
-    <div>
+    <section id="contacts">
         <h2>Send an email</h2>
-    </div>
+    </section>
   )
 }
 
