@@ -5,6 +5,7 @@ import FruitMenu from './components/Menu/FruitMenu'
 import  About  from './components/About/About'
 import RandomRecipe from './components/Recipes/RandomRecipe'
 import Footer from './components/Footer/Footer'
+import Contact from './components/Contact/Contact'
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <FruitMenu/>
       <About/>
       <RandomRecipe/>
+      <Contact/>
       <Footer/>
     </main>
   )
