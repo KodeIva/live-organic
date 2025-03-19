@@ -14,10 +14,10 @@ const Contact = () => {
             <textarea 
               className="bg-slate-400 outline-none text-white placeholder-white pl-2 pt-2 rounded-lg"
               name="message" 
-              id="message" cols="30" rows="10" 
+              id="message" cols="30" rows="7" 
               placeholder="Your message...">
             </textarea>
-            <button type="submit">Send</button>
+            <button className="bg-slate-400 text-white font-semibold tracking-wider rounded-lg mt-6 h-10 " type="submit">Submit</button>
         </form>
     </section>
   )
