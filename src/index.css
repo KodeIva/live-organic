@@ -8,6 +8,9 @@
          rounded-xl shadow-[1px_10px_14px_-7px_#F72C5B]
          hover:!scale-110 duration-300 ;
     }
+    .social-size {
+        @apply text-3xl md:text-4xl mx-1;
+    }
 }
 
 html {
