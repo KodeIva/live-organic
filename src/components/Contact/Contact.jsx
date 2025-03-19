@@ -17,7 +17,7 @@ const Contact = () => {
               id="message" cols="30" rows="7" 
               placeholder="Your message...">
             </textarea>
-            <button className="bg-slate-400 text-white font-semibold tracking-wider rounded-lg mt-6 h-10 " type="submit">Submit</button>
+            <button className="bg-slate-400 text-white border-2 border-transparent font-semibold tracking-wider rounded-lg mt-6 h-10 hover:bg-white hover:border-slate-400 hover:text-slate-400 duration-300" type="submit">Submit</button>
         </form>
     </section>
   )
